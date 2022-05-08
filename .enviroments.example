@@ -1,0 +1,1 @@
+MONGOUSER=user MONGOPWD=password MONGOHOST=cluster0.punob.mongodb.net MONGOPORT= MONGODB=nameDB MONGOPROTOCOL=mongodb+srv

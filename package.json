@@ -4,15 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js --mode development",
-    "start": "node index.js --mode production"
+    "dev": "NODE_ENV=development nodemon index.js",
+    "start": "export $(cat .enviroments | xargs) && NODE_ENV=production node index.js "
   },
   "author": "jaalorsa",
   "license": "ISC",
   "dependencies": {
     "config": "^3.3.7",
     "cors": "^2.8.5",
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "mongoose": "^6.3.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
