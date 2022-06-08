@@ -1,5 +1,6 @@
 module.exports = {
   port: process.env.PORT || 10000,
+  jwt: { secret: process.env.JWT_SECRET },
   db: {
     mongoDb: {
       user: process.env.MONGOUSER,

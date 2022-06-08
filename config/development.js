@@ -1,5 +1,6 @@
 module.exports = {
   port: 10000,
+  jwt: { secret: "my_secret_key" },
   db: {
     mongoDb: {
       user: "",

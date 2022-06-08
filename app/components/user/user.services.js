@@ -18,4 +18,7 @@ module.exports = {
     await User.create(user);
     return { message: "Usuario creado con exito" };
   },
+  getUser: async (filter, project) => {
+    return await User.findOne(filter, project).lean();
+  },
 };
